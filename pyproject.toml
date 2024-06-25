@@ -1,0 +1,15 @@
+[project]
+name = "comfyui_stableaudio_open"
+description = " you can using stable_audio in comfyUI"
+version = "1.0.0"
+license = "LICENSE"
+dependencies = ["stable_audio_tools"]
+
+[project.urls]
+Repository = "https://github.com/smthemex/ComfyUI_StableAudio_Open"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = "smthemx"
+DisplayName = "ComfyUI_StableAudio_Open"
+Icon = ""
