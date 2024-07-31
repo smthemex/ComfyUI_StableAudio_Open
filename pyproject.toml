@@ -2,7 +2,7 @@
 name = "comfyui_stableaudio_open"
 description = " you can using stable_audio in comfyUI"
 version = "1.0.0"
-license = "LICENSE"
+license = { file = "LICENSE" }
 dependencies = ["stable_audio_tools"]
 
 [project.urls]
