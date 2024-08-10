@@ -11,13 +11,13 @@ You can find Stable-audio-open-1.0  [Stable-audio-open-1.0](https://github.com/S
  ```
 2  Dependencies  需求库  
 -----
- ``` python 
+ ```  
 pip install stable-audio-tools
  ```
 这个库的需求很奇特，很大可能导致其他插件无法使用，请谨慎尝试，或者使用Conda    
 The requirements for this library are very unique and may cause other plugins to be unusable. Please try it carefully or use Conda    
 
-3 Download the checkpoints   下载模型
+3 checkpoints   模型
 ----
 模型地址 Model address   
  [Stable-audio-open-1.0 (huggingface)](https://huggingface.co/stabilityai/stable-audio-open-1.0)  
@@ -25,21 +25,40 @@ The requirements for this library are very unique and may cause other plugins to
    
 4 about node  模型节点说明
 ----
-如果使用repo_id ,不一定能连上，需要申请。如果你直接下载，有两种使用方法：  
-1、是把你下载的模型文件放在comfyUI的models/diffusers 下，然后repo_id 节点就能找到，保持repo_id为空时，就可以使用。  
-2、是保持上面的菜单为none（默认），在下方的地址栏填写你的模型的实际链接地址（windows系统使用"/"），例如：you_path/Stability-AI/stable-audio-tools    
-
-If using repo_id, it may not be possible to connect and requires an application. If you download directly, there are two ways to use it:       
-1. It is to place the downloaded model file in the "..models/diffusers" section of ComfyUI, and then find the repo_id node. When the repo_id is left empty, it can be used.       
-2. Keep the menu above as "none" (default), and fill in the actual link address of your model in the address bar below (using "/" in Windows systems), for example: you_path/Stability-AI/stable-audio-tools       
+-- using repo or offline checkpoints   
+-- use_diffuser_pipe need diffusers>=0.29   
 
 5 example 示例
 ----
 
-![](https://github.com/smthemex/ComfyUI_StableAudio_Open/blob/main/exapmle.png)
+![](https://github.com/smthemex/ComfyUI_StableAudio_Open/blob/main/example.png)
 
 
-6 LICENSE 
+6 My ComfyUI node list：
+-----
+
+1、ParlerTTS node:[ComfyUI_ParlerTTS](https://github.com/smthemex/ComfyUI_ParlerTTS)     
+2、Llama3_8B node:[ComfyUI_Llama3_8B](https://github.com/smthemex/ComfyUI_Llama3_8B)      
+3、HiDiffusion node：[ComfyUI_HiDiffusion_Pro](https://github.com/smthemex/ComfyUI_HiDiffusion_Pro)   
+4、ID_Animator node： [ComfyUI_ID_Animator](https://github.com/smthemex/ComfyUI_ID_Animator)       
+5、StoryDiffusion node：[ComfyUI_StoryDiffusion](https://github.com/smthemex/ComfyUI_StoryDiffusion)  
+6、Pops node：[ComfyUI_Pops](https://github.com/smthemex/ComfyUI_Pops)   
+7、stable-audio-open-1.0 node ：[ComfyUI_StableAudio_Open](https://github.com/smthemex/ComfyUI_StableAudio_Open)        
+8、GLM4 node：[ComfyUI_ChatGLM_API](https://github.com/smthemex/ComfyUI_ChatGLM_API)   
+9、CustomNet node：[ComfyUI_CustomNet](https://github.com/smthemex/ComfyUI_CustomNet)           
+10、Pipeline_Tool node :[ComfyUI_Pipeline_Tool](https://github.com/smthemex/ComfyUI_Pipeline_Tool)    
+11、Pic2Story node :[ComfyUI_Pic2Story](https://github.com/smthemex/ComfyUI_Pic2Story)   
+12、PBR_Maker node:[ComfyUI_PBR_Maker](https://github.com/smthemex/ComfyUI_PBR_Maker)      
+13、ComfyUI_Streamv2v_Plus node:[ComfyUI_Streamv2v_Plus](https://github.com/smthemex/ComfyUI_Streamv2v_Plus)   
+14、ComfyUI_MS_Diffusion node:[ComfyUI_MS_Diffusion](https://github.com/smthemex/ComfyUI_MS_Diffusion)   
+15、ComfyUI_AnyDoor node: [ComfyUI_AnyDoor](https://github.com/smthemex/ComfyUI_AnyDoor)  
+16、ComfyUI_Stable_Makeup node: [ComfyUI_Stable_Makeup](https://github.com/smthemex/ComfyUI_Stable_Makeup)  
+17、ComfyUI_EchoMimic node:  [ComfyUI_EchoMimic](https://github.com/smthemex/ComfyUI_EchoMimic)   
+18、ComfyUI_FollowYourEmoji node: [ComfyUI_FollowYourEmoji](https://github.com/smthemex/ComfyUI_FollowYourEmoji)   
+19、ComfyUI_Diffree node: [ComfyUI_Diffree](https://github.com/smthemex/ComfyUI_Diffree)    
+20、ComfyUI_FoleyCrafter node: [ComfyUI_FoleyCrafter](https://github.com/smthemex/ComfyUI_FoleyCrafter)
+
+7 LICENSE 
 ------
 
 ``` python  
